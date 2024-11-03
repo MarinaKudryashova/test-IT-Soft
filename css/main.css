@@ -2668,6 +2668,18 @@ a {
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
+.address__linkmap:focus-visible {
+  outline: none;
+  color: var(--c-white);
+}
+@media (any-hover: hover) {
+  .address__linkmap:hover {
+    color: var(--c-white);
+  }
+}
+.address__linkmap:active {
+  color: var(--c-white);
+}
 @media (max-width: 1024px) {
   .address__linkmap {
     padding-top: 8px;
@@ -2678,18 +2690,6 @@ a {
   .address__linkmap {
     font-size: 14px;
   }
-}
-.address__linkmap:focus-visible {
-  outline: none;
-  color: var(--c-white);
-}
-@media (any-hover: hover) {
-  .address__linkmap:hover {
-    outline: none;
-  }
-}
-.address__linkmap:active {
-  color: var(--c-white);
 }
 
 .footer-contacts__link {
