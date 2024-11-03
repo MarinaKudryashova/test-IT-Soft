@@ -910,6 +910,14 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .phonelist__icon {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    stroke-width: 2px;
+  }
+}
+@media (max-width: 768px) {
   .phonelist__container {
     position: absolute;
     top: var(--header-height);
