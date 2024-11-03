@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="site descr">
+  <meta name="keywords" content="site words">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="site url">
+  <meta property="og:title" content="Тестовое ИТ-Софт">
+  <meta property="og:description" content="site descr">
+  <meta property="og:image" content="img/site-preview.jpg">
+  <meta property="og:url" content="site url">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="site url">
+  <meta name="twitter:title" content="Тестовое ИТ-Софт">
+  <meta name="twitter:description" content="site descr">
+  <meta name="twitter:image" content="img/site-preview.jpg">
+
+  <title>Тестовое ИТ-Софт</title>
+
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Тестовое ИТ-Софт">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" as="image" imagesrcset="img/banner-bg.jpg 1x, img/banner-bg@2x.jpg 2x">
+
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+      <div class="header-up">
+        <div class="header-up__container container">
+          <div class="header-up__left">
+            <ul class="header-up__list list-reset">
+              <li class="header-up__item"><a href="#" class="header-up__link link-ui">О&#160;компании</a></li>
+              <li class="header-up__item"><a href="#" class="header-up__link link-ui">Новости</a></li>
+              <li class="header-up__item"><a href="#" class="header-up__link link-ui">Видео</a></li>
+              <li class="header-up__item"><a href="#" class="header-up__link link-ui">Акции</a></li>
+            </ul>
+            <ul class="header-up__social social list-reset">
+              <li class="social__item"><a href="https://www.youtube.com" target="_blank" class="social__link" aria-label="Наша страничка в Youtube">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a></li>
+              <li class="social__item"><a href="https://www.instagram.com" target="_blank" class="social__link" aria-label="Наша страничка в Instagram">
+                <svg class="social__icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_1_68" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="20" height="20">
+                  <path d="M19.5 7.89293C19.5 8.66218 18.8764 9.28578 18.1071 9.28578C17.3379 9.28578 16.7143 8.66218 16.7143 7.89293C16.7143 7.12367 17.3379 6.50007 18.1071 6.50007C18.8764 6.50007 19.5 7.12367 19.5 7.89293Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 17.6429C15.5642 17.6429 17.6429 15.5642 17.6429 13.0001C17.6429 10.4359 15.5642 8.35721 13 8.35721C10.4358 8.35721 8.35714 10.4359 8.35714 13.0001C8.35714 15.5642 10.4358 17.6429 13 17.6429ZM13 15.7858C14.5385 15.7858 15.7857 14.5386 15.7857 13.0001C15.7857 11.4616 14.5385 10.2144 13 10.2144C11.4615 10.2144 10.2143 11.4616 10.2143 13.0001C10.2143 14.5386 11.4615 15.7858 13 15.7858Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71429 12.6286C3.71429 9.50835 3.71429 7.9482 4.32154 6.75641C4.85569 5.70808 5.70801 4.85576 6.75634 4.3216C7.94813 3.71436 9.50828 3.71436 12.6286 3.71436H13.3714C16.4917 3.71436 18.0519 3.71436 19.2437 4.3216C20.292 4.85576 21.1443 5.70808 21.6785 6.75641C22.2857 7.9482 22.2857 9.50835 22.2857 12.6286V13.3715C22.2857 16.4918 22.2857 18.0519 21.6785 19.2437C21.1443 20.2921 20.292 21.1444 19.2437 21.6785C18.0519 22.2858 16.4917 22.2858 13.3714 22.2858H12.6286C9.50828 22.2858 7.94813 22.2858 6.75634 21.6785C5.70801 21.1444 4.85569 20.2921 4.32154 19.2437C3.71429 18.0519 3.71429 16.4918 3.71429 13.3715V12.6286ZM12.6286 5.5715H13.3714C14.9622 5.5715 16.0436 5.57294 16.8795 5.64124C17.6937 5.70776 18.1101 5.82834 18.4005 5.97633C19.0994 6.33243 19.6676 6.90065 20.0237 7.59953C20.1717 7.88999 20.2923 8.30637 20.3588 9.12057C20.4271 9.95645 20.4286 11.0379 20.4286 12.6286V13.3715C20.4286 14.9623 20.4271 16.0437 20.3588 16.8796C20.2923 17.6938 20.1717 18.1102 20.0237 18.4006C19.6676 19.0995 19.0994 19.6677 18.4005 20.0238C18.1101 20.1718 17.6937 20.2924 16.8795 20.3589C16.0436 20.4272 14.9622 20.4286 13.3714 20.4286H12.6286C11.0378 20.4286 9.95638 20.4272 9.1205 20.3589C8.3063 20.2924 7.88992 20.1718 7.59946 20.0238C6.90058 19.6677 6.33236 19.0995 5.97626 18.4006C5.82827 18.1102 5.70769 17.6938 5.64117 16.8796C5.57287 16.0437 5.57143 14.9623 5.57143 13.3715V12.6286C5.57143 11.0379 5.57287 9.95645 5.64117 9.12057C5.70769 8.30637 5.82827 7.88999 5.97626 7.59953C6.33236 6.90065 6.90058 6.33243 7.59946 5.97633C7.88992 5.82834 8.3063 5.70776 9.1205 5.64124C9.95638 5.57294 11.0378 5.5715 12.6286 5.5715Z" />
+                  </mask>
+                  <g mask="url(#mask0_1_68)">
+                  <rect x="3.71429" y="3.71436" width="18.5714" height="18.5714" rx="6"/>
+                  </g>
+                </svg>
+              </a></li>
+            </ul>
+          </div>
+          <div class="header-up__right">
+            <div class="timeworks">Время работы: пн-пт 9:00&#8211;18:00</div>
+            <a href="#" class="header-up__link link-ui">Контакты</a>
+            <div class="header-up__searchbar searchbar">
+              <button class="searchbar__btnopen btn-reset" aria-label="открыть форму поиска">
+                <svg class="searchbar__icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <form action="#" class="searchbar__form search" aria-label="форма поиска по сайту">
+                <input type="text" class="searchbar__input input-reset " placeholder="Поиск" aria-label="Введите искомое значение">
+                <button class="searchbar__btnclose btn-reset" aria-label="закрыть форму поиска">
+                  <svg class="searchbar__icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <button type="submit" class="searchbar__btnsearch btn-reset" aria-label="начать поиск">
+                  <svg class="searchbar__icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__main header-main">
+        <div class="header-main__container container">
+          <nav class="header-main__nav nav" title="main navigation">
+            <ul class="list-reset nav__list">
+              <li class="nav__item"><a href="#" class="nav__link link-ui">ТЕХНИКА</a></li>
+              <li class="nav__item"><a href="#" class="nav__link link-ui">ЗАПЧАСТИ</a></li>
+              <li class="nav__item"><a href="#" class="nav__link lilink-uink">ПРЕСС-ЦЕНТР</a></li>
+              <li class="nav__item"><a href="#" class="nav__link link-ui">Лизинг</a></li>
+              <li class="nav__item"><a href="#" class="nav__link link-ui">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header-main__right">
+            <a href="#" class="header-main__link header-main__link--login login link-ui" aria-label="открыть личный кабинет">
+              <svg class="login__icon">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+              <span class="login__name">Личный кабинет</span>
+            </a>
+            <div class="header-main__link header-main__link--phone phone">
+              <svg class="phone__icon">
+                <use xlink:href="img/sprite.svg#call"></use>
+              </svg>
+              <span class="phone__title">Отдел продаж</span>
+              <a href="tel:+99999999999" class="phone__link link-ui" aria-label="позвонить в отдел продаж">9 (9999) 999-999</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile">
+        <div class="header-mobile__container container">
+          <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span class="burger__line"></span>
+          </button>
+          <nav class="header-mobile__nav nav-mobile" title="main navigation" data-menu>
+            <ul class="list-reset nav-mobile__list" title="main menu">
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>ТЕХНИКА</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>ЗАПЧАСТИ</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>ПРЕСС-ЦЕНТР</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>Лизинг</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>Контакты</a></li>
+            </ul>
+            <ul class="nav-mobile__list list-reset" title="second menu">
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>О&#160;компании</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>Новости</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>Видео</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>Акции</a></li>
+              <li class="nav-mobile__item"><a href="#" class="nav-mobile__link link-ui" data-menu-item>Контакты</a></li>
+            </ul>
+            <div class="nav-mobile__timework timeworks">Время работы: пн-пт 9:00&#8211;18:00</div>
+            <ul class="nav-mobile__social social list-reset">
+              <li class="social__item"><a href="https://www.youtube.com" target="_blank" class="social__link" aria-label="Наша страничка в Youtube">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#youtube"></use>
+                </svg>
+              </a></li>
+              <li class="social__item"><a href="https://www.instagram.com" target="_blank" class="social__link" aria-label="Наша страничка в Instagram">
+                <svg class="social__icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_1_69" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="20" height="20">
+                  <path d="M19.5 7.89293C19.5 8.66218 18.8764 9.28578 18.1071 9.28578C17.3379 9.28578 16.7143 8.66218 16.7143 7.89293C16.7143 7.12367 17.3379 6.50007 18.1071 6.50007C18.8764 6.50007 19.5 7.12367 19.5 7.89293Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13 17.6429C15.5642 17.6429 17.6429 15.5642 17.6429 13.0001C17.6429 10.4359 15.5642 8.35721 13 8.35721C10.4358 8.35721 8.35714 10.4359 8.35714 13.0001C8.35714 15.5642 10.4358 17.6429 13 17.6429ZM13 15.7858C14.5385 15.7858 15.7857 14.5386 15.7857 13.0001C15.7857 11.4616 14.5385 10.2144 13 10.2144C11.4615 10.2144 10.2143 11.4616 10.2143 13.0001C10.2143 14.5386 11.4615 15.7858 13 15.7858Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.71429 12.6286C3.71429 9.50835 3.71429 7.9482 4.32154 6.75641C4.85569 5.70808 5.70801 4.85576 6.75634 4.3216C7.94813 3.71436 9.50828 3.71436 12.6286 3.71436H13.3714C16.4917 3.71436 18.0519 3.71436 19.2437 4.3216C20.292 4.85576 21.1443 5.70808 21.6785 6.75641C22.2857 7.9482 22.2857 9.50835 22.2857 12.6286V13.3715C22.2857 16.4918 22.2857 18.0519 21.6785 19.2437C21.1443 20.2921 20.292 21.1444 19.2437 21.6785C18.0519 22.2858 16.4917 22.2858 13.3714 22.2858H12.6286C9.50828 22.2858 7.94813 22.2858 6.75634 21.6785C5.70801 21.1444 4.85569 20.2921 4.32154 19.2437C3.71429 18.0519 3.71429 16.4918 3.71429 13.3715V12.6286ZM12.6286 5.5715H13.3714C14.9622 5.5715 16.0436 5.57294 16.8795 5.64124C17.6937 5.70776 18.1101 5.82834 18.4005 5.97633C19.0994 6.33243 19.6676 6.90065 20.0237 7.59953C20.1717 7.88999 20.2923 8.30637 20.3588 9.12057C20.4271 9.95645 20.4286 11.0379 20.4286 12.6286V13.3715C20.4286 14.9623 20.4271 16.0437 20.3588 16.8796C20.2923 17.6938 20.1717 18.1102 20.0237 18.4006C19.6676 19.0995 19.0994 19.6677 18.4005 20.0238C18.1101 20.1718 17.6937 20.2924 16.8795 20.3589C16.0436 20.4272 14.9622 20.4286 13.3714 20.4286H12.6286C11.0378 20.4286 9.95638 20.4272 9.1205 20.3589C8.3063 20.2924 7.88992 20.1718 7.59946 20.0238C6.90058 19.6677 6.33236 19.0995 5.97626 18.4006C5.82827 18.1102 5.70769 17.6938 5.64117 16.8796C5.57287 16.0437 5.57143 14.9623 5.57143 13.3715V12.6286C5.57143 11.0379 5.57287 9.95645 5.64117 9.12057C5.70769 8.30637 5.82827 7.88999 5.97626 7.59953C6.33236 6.90065 6.90058 6.33243 7.59946 5.97633C7.88992 5.82834 8.3063 5.70776 9.1205 5.64124C9.95638 5.57294 11.0378 5.5715 12.6286 5.5715Z" />
+                  </mask>
+                  <g mask="url(#mask0_1_69)">
+                  <rect x="3.71429" y="3.71436" width="18.5714" height="18.5714" rx="6"/>
+                  </g>
+                </svg>
+              </a></li>
+            </ul>
+          </nav>
+          <div class="header-mobile__right">
+            <div class="header-mobile__searchbar searchbar">
+              <button class="searchbar__btnopen btn-reset" aria-label="открыть форму поиска">
+                <svg class="searchbar__icon">
+                  <use xlink:href="img/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <form action="#" class="searchbar__form search" aria-label="форма поиска по сайту">
+                <input type="text" class="searchbar__input input-reset " placeholder="Поиск" aria-label="Введите искомое значение">
+                <button class="searchbar__btnclose btn-reset" aria-label="закрыть форму поиска">
+                  <svg class="searchbar__icon">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+                </button>
+                <button type="submit" class="searchbar__btnsearch btn-reset" aria-label="начать поиск">
+                  <svg class="searchbar__icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <a href="#" class="header-mobile__link header-mobile__link--login login link-ui" aria-label="открыть личный кабинет">
+              <svg class="login__icon">
+                <use xlink:href="img/sprite.svg#user"></use>
+              </svg>
+              <span class="login__name">Личный кабинет</span>
+            </a>
+            <div class="header-mobile__phonelist phonelist">
+              <button class="phonelist__btn btn-reset">
+                <svg class="phonelist__icon">
+                  <use xlink:href="img/sprite.svg#call"></use>
+                </svg>
+              </button>
+              <ul class="phonelist__container list-reset">
+                <li class="phonelist__item">
+                  <span class="phonelist__title">Отдел продаж</span>
+                  <a href="tel:+99999999999" class="phonelist__link link-ui" aria-label="позвонить в отдел продаж">9 (9999) 999-999</a>
+                </li>
+                <li class="phonelist__item">
+                  <span class="phonelist__title">Отдел продаж</span>
+                  <a href="tel:+99999999999" class="phonelist__link link-ui" aria-label="позвонить в отдел продаж">9 (9999) 999-999</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="banner" data-menu-overlay>
+        <picture class="banner__bgimg">
+          <source srcset="img/banner-bg768.webp" media="(max-width: 576px)" type="image/webp">
+          <source srcset="img/banner-bg768.jpg" media="(max-width: 576px)">
+          <source srcset="img/banner-bg.webp 1x, img/banner-bg@2x.webp 2x" type="image/webp">
+          <source srcset="img/banner-bg@2x.jpg 2x" type="image/jpg">
+          <img src="img/banner-bg.jpg" height="220" alt="бульдозер в карьере" aria-hidden="true">
+        </picture>
+        <div class="banner__container container">
+          <ul class="banner__breadcrumbs breadcrumbs list-reset" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a class="breadcrumbs__link link-ui" href="/" title="Главная" itemprop="item">
+                    <span itemprop="name">Главная</span>
+                    <meta itemprop="position" content="1">
+                </a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--current" aria-current="page">
+              <span class="breadcrumbs__current" itemprop="name">Лизинг</span>
+              <meta itemprop="position" content="2">
+            </li>
+          </ul>
+          <div class="banner__content">
+            <div class="banner__head">
+              <h1 class="banner__title">Спецтехника </h1>
+              <p class="banner__descr">Выгодно. Удобно. Доступно</p>
+            </div>
+            <a href="#bannerform" class="banner__btn btn">рассчитать цену</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="photoslider">
+        <div class="photoslider__container container">
+          <div class="swiper photoslider__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture class="photoslider__img">
+                  <source srcset="img/slider-img-1.webp 1x, img/slider-img-1@2x.jpg 2x" type="image/webp">
+                  <source srcset="img/slider-img-1@2x.jpg 2x" type="image/webp">
+                  <img src="img/slider-img-1.jpg" width="1300" height="580" alt="Виды спецтехники">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture class="photoslider__img">
+                  <source srcset="img/slider-img-2.webp 1x, img/slider-img-2@2x.jpg 2x" type="image/webp">
+                  <source srcset="img/slider-img-2@2x.jpg 2x" type="image/webp">
+                  <img src="img/slider-img-2.jpg" width="1300" height="580" alt="Виды спецтехники">
+                </picture>
+              </div>
+            </div>
+            <div class="photoslider__nav">
+              <button class="photoslider__btn-prev btn-reset">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-angle-left"></use>
+                </svg>
+              </button>
+              <button class="photoslider__btn-next btn-reset">
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow-angle-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="about">
+        <div class="about__container container">
+          <h2 class="about__title section-title">О&#160;нас</h2>
+          <div class="about__contetn">
+            <p class="about__text"><strong class="about__textbolt">Наша компания является ведущим производителем спецтехники в&#160;России, известной своим качеством и&#160;надежностью.</strong> Наши машины находят применение в&#160;самых разных отраслях, включая строительство и&#160;горнодобывающую промышленность. Мы&#160;гордимся тем, что предоставляем решения для выполнения сложнейших задач.</p>
+            <p class="about__text">Мы&#160;предлагаем выгодные условия лизинга спецтехники для вашего бизнеса. Благодаря государственной программе поддержки и&#160;субсидирования, приобретение качественной техники стало еще доступнее.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__container container">
+          <h2 class="benefits__title section-title">Преимущества компании:</h2>
+          <ul class="benefits__list list-reset">
+            <li class="benefits__item">
+              <div class="benefits-block">
+                <h3 class="benefits-block__title">Гибкие условия</h3>
+                <p class="benefits-block__text">Наши партнеры, с&#160;которыми мы&#160;сотрудничаем более 10 лет, подберут оптимальный график платежей</p>
+                <div class="benefits-block__bgicon">
+                  <svg class="benefits-block__icon">
+                    <use xlink:href="img/sprite.svg#calendar"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits-block">
+                <h3 class="benefits-block__title">Минимальный первоначальный взнос</h3>
+                <p class="benefits-block__text">Обеспечим доступность техники</p>
+                <div class="benefits-block__bgicon">
+                  <svg class="benefits-block__icon">
+                    <use xlink:href="img/sprite.svg#wallet"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+            <li class="benefits__item">
+              <div class="benefits-block">
+                <h3 class="benefits-block__title">Поддержка государства</h3>
+                <p class="benefits-block__text">Экономия на&#160;процентах и&#160;первом взносе</p>
+                <div class="benefits-block__bgicon">
+                  <svg class="benefits-block__icon">
+                    <use xlink:href="img/sprite.svg#shield"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__container container">
+          <div class="catalog__top">
+            <h2 class="catalog__title section-title">Какая техника доступна?</h2>
+            <p class="catalog__descr">Кроме лизинга, наша компания предлагает возможность приобретения спецтехники. В&#160;ассортименте представлены разнообразные модели, которые соответствуют всем потребностям вашего бизнеса </p>
+            <a href="#" class="catalog__btn btn">ПОСМОТРЕТЬ КАТАЛОГ</a>
+          </div>
+          <div class="swiper catalog__slider">
+            <div class="swiper-wrapper catalog__list">
+              <div class="swiper-slide catalog__item">
+                <a href="#" class="catalog-card">
+                  <picture class="catalog-card__img">
+                    <source srcset="img/catalog/catalog-preview-1.webp 1x, img/catalog/catalog-preview-1@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-preview-1@2x.jpg 2x" type="image/jpg">
+                    <img loading="lazy" src="img/catalog/catalog-preview-1.jpg" width="200" height="200" alt="Гусеничные бульдозеры">
+                  </picture>
+                  <h3 class="catalog-card__title">Гусеничные бульдозеры</h3>
+                </a>
+              </div>
+              <div class="swiper-slide catalog__item">
+                <a href="#" class="catalog-card">
+                  <picture class="catalog-card__img">
+                    <source srcset="img/catalog/catalog-preview-2.webp 1x, img/catalog/catalog-preview-2@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-preview-2@2x.jpg 2x" type="image/jpg">
+                    <img loading="lazy" src="img/catalog/catalog-preview-2.jpg" width="200" height="200" alt="Колёсные бульдозеры">
+                  </picture>
+                  <h3 class="catalog-card__title">Колёсные бульдозеры</h3>
+                </a>
+              </div>
+              <div class="swiper-slide catalog__item">
+                <a href="#" class="catalog-card">
+                  <picture class="catalog-card__img">
+                    <source srcset="img/catalog/catalog-preview-3.webp 1x, img/catalog/catalog-preview-3@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-preview-3@2x.jpg 2x" type="image/jpg">
+                    <img loading="lazy" src="img/catalog/catalog-preview-3.jpg" width="200" height="200" alt="Трубоукладчики">
+                  </picture>
+                  <h3 class="catalog-card__title">Трубоукладчики</h3>
+                </a>
+              </div>
+              <div class="swiper-slide catalog__item">
+                <a href="#" class="catalog-card">
+                  <picture class="catalog-card__img">
+                    <source srcset="img/catalog/catalog-preview-4.webp 1x, img/catalog/catalog-preview-4@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-preview-4@2x.jpg 2x" type="image/jpg">
+                    <img loading="lazy" src="img/catalog/catalog-preview-4.jpg" width="200" height="200" alt="Мини-погрузчики">
+                  </picture>
+                  <h3 class="catalog-card__title">Мини-погрузчики</h3>
+                </a>
+              </div>
+              <div class="swiper-slide catalog__item">
+                <a href="#" class="catalog-card">
+                  <picture class="catalog-card__img">
+                    <source srcset="img/catalog/catalog-preview-5.webp 1x, img/catalog/catalog-preview-5@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-preview-5@2x.jpg 2x" type="image/jpg">
+                    <img loading="lazy" src="img/catalog/catalog-preview-5.jpg" width="200" height="200" alt="Гусеничные экскаваторы">
+                  </picture>
+                  <h3 class="catalog-card__title">Гусеничные экскаваторы</h3>
+                </a>
+              </div>
+              <div class="swiper-slide catalog__item">
+                <a href="#" class="catalog-card">
+                  <picture class="catalog-card__img">
+                    <source srcset="img/catalog/catalog-preview-6.webp 1x, img/catalog/catalog-preview-6@2x.webp 2x" type="image/webp">
+                    <source srcset="img/catalog/catalog-preview-6@2x.jpg 2x" type="image/jpg">
+                    <img loading="lazy" src="img/catalog/catalog-preview-6.jpg" width="200" height="200" alt="Горно-шахтное оборудование">
+                  </picture>
+                  <h3 class="catalog-card__title">Горно-шахтное оборудование</h3>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="news">
+        <div class="news__container container">
+          <article class="news-post">
+            <h3 class="news-post__title">
+              <a href="#" class="news-post__link link-ui">Что думают потребители об&#160;экскаваторе?</a>
+            </h3>
+            <div class="news-post__content">
+              <p class="news-post__text">Мини-погрузчики с&#160;бортовым поворотом&#160;&#8212; это многофункциональная и&#160;компактная спецтехника, идеально подходящая для дорожных работ, уборки тротуаров, аллей и&#160;пешеходных зон, а&#160;также для ландшафтных работ.<br>
+              Эти погрузчики незаменимы на&#160;строительных площадках и&#160;в&#160;сельском хозяйстве.</p>
+              <p class="news-post__text">Они поддерживают установку более 40 видов навесного оборудования, что делает их&#160;универсальными для решения самых разнообразных задач.</p>
+            </div>
+          </article>
+          <article class="news-post">
+            <h3 class="news-post__title">
+              <a href="#" class="news-post__link link-ui">Трубоукладчики в&#160;деле: эксплуатация при строительстве газопровод</a>
+            </h3>
+            <div class="news-post__content">
+              <p class="news-post__text">Новая комплектация разработана на&#160;основе серийных мини-погрузчиков и&#160;включает более десяти усовершенствований в&#160;конструкции.</p>
+              <p class="news-post__text">Главной особенностью модернизированной линейки является новая стрела с&#160;измененной кинематикой, обеспечивающая вертикальный подъем ковша.</p>
+              <p class="news-post__text">Это позволило увеличить высоту подъема ковша на&#160;600&#160;мм и&#160;повысить грузоподъемность на&#160;20%, что делает технику еще более производительной и&#160;эффективной.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <section id="bannerform" class="bannerform">
+        <div class="bannerform__container container">
+          <h2 class="bannerform__title section-title">Наш специалист подробно ответит на&#160;ваши вопросы</h2>
+          <form action="mail.php" class="bannerform__form form" method="post" enctype="multipart/form-data" aria-label="форма заказа обратного звонка" novalidate="novalidate">
+            <div class="form__content ">
+              <div class="form-field">
+                <label class="form-field__label form-field__label--required">Ваше имя</label>
+                <input class="form-field__input input-reset" required type="text" name="username" placeholder="Имя" aria-label="Введите ваше имя" autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label class="form-field__label form-field__label--required">Телефон</label>
+                <input class="form-field__input input-reset" required type="tel" name="tel" placeholder="Телефон" aria-label="Введите ваш номер телефона" autocomplete="tel">
+              </div>
+              <div class="form-field">
+                <label class="form-field__label form-field__label--required">Email</label>
+                <input class="form-field__input input-reset" required type="email" name="email" placeholder="Email" aria-label="Введите ваш email" autocomplete="email">
+              </div>
+              <button type="submit" class="form__btn btn btn-reset">оставить заявку</button>
+            </div>
+            <div class="form-argee">
+              <label class="form-argee__label">
+                <input class="form-argee__input" type="checkbox" name="agree" id="agree" value="1" checked="checked" required aria-invalid="false">
+                <span class="form-argee__text">Согласие на&#160;обработку <a href="#" class="form-argee__link link-ui">персональных данных</a></span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="faq__container container">
+          <h2 class="faq__title section-title">Остались вопросы?</h2>
+          <div class="faq__content">
+            <div class="faq__accordion accordion">
+              <button class="accordion__control btn-reset" aria-expanded="false">
+                <span class="accordion__title">Компании-партнёры</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <h3 class="accordion__titlecontent">Lorem ipsum dolor sit amet.</h3>
+                <p class="accordion__textcontent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, harum!</p>
+              </div>
+            </div>
+            <div class="faq__accordion accordion">
+              <button class="accordion__control btn-reset" aria-expanded="false">
+                <span class="accordion__title">Какие документы нужны для оформления</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <h3 class="accordion__titlecontent">Lorem ipsum dolor sit amet.</h3>
+                <p class="accordion__textcontent">Для юридических лиц нужны регистрационные документы организации, удостоверение личности руководителя, а&#160;также финансовая отчетность за&#160;последний&#160;год. Для физических лиц&#160;&#8212; паспорт и&#160;справка о&#160;доходах</p>
+              </div>
+            </div>
+            <div class="faq__accordion accordion">
+              <button class="accordion__control btn-reset" aria-expanded="false">
+                <span class="accordion__title">Возможно&#160;ли досрочное погашение</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <h3 class="accordion__titlecontent">Lorem ipsum dolor sit amet.</h3>
+                <p class="accordion__textcontent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, harum!</p>
+                <p class="accordion__textcontent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, harum!</p>
+                <p class="accordion__textcontent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, harum!</p>
+              </div>
+            </div>
+            <div class="faq__accordion accordion">
+              <button class="accordion__control btn-reset" aria-expanded="false">
+                <span class="accordion__title">Как долго рассматривается заявка</span>
+                <span class="accordion__icon"></span>
+              </button>
+              <div class="accordion__content" aria-hidden="true">
+                <p class="accordion__textcontent">Для юридических лиц нужны регистрационные документы организации, удостоверение личности руководителя, а&#160;также финансовая отчетность за&#160;последний&#160;год. Для физических лиц&#160;&#8212; паспорт и&#160;справка о&#160;доходах</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="banner-leasing">
+          <p class="banner-leasing__content">Мы&#160;предлагаем разнообразные моделей спецтехники на&#160;условиях лизинга.<span class="banner-leasing__stronge">Воспользуйтесь программой субсидирования и&#160;получите скидку до&#160;40%!</span>
+          </p>
+          <a href="#bannerform" class="banner-leasing__btn btn">рассчитать лизинг</a>
+        </div>
+      </div>
+
+      <section class="contacts">
+        <div class="contacts__container container">
+          <h2 class="contacts__title section-title">Мы&#160;всегда готовы ответить на&#160;ваши вопросы и&#160;помочь с&#160;выбором!</h2>
+          <ul class="contacts__list list-reset">
+            <li class="contacts__item">
+              <address class="contacts-block">
+                <span class="contacts-block__name">Телефон дирекции продаж:</span>
+                <div class="contacts-block__content">
+                  <a href="tel:+799999999999" class="contacts-block__link contacts-block__link--phone link-ui"><no-typography>+7 (9999) 999-999</no-typography></a>
+                  <a href="tel:+799999999999" class="contacts-block__link contacts-block__link--phone link-ui"><no-typography>+7 (9999) 999-999</no-typography></a>
+                </div>
+              </address>
+            </li>
+            <li class="contacts__item">
+              <address class="contacts-block">
+                <span class="contacts-block__name">Почта:</span>
+                <a href="mailto:test@test.com" class="contacts-block__link contacts-block__link--mail link-ui">test@test.com</a>
+              </address>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+    <div class="graph-modal">
+      <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="modal-send">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+          <div class="graph-modal__send">
+            <svg>
+              <use xlink:href="img/sprite.svg#check"></use>
+            </svg>
+            <p>Спасибо!</p>
+            <span>Ваше сообщение отправлено</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__nav">
+          <div class="footer__menu footer-menu">
+            <h3 class="footer-menu__title">О&#160;КОМПАНИИ</h3>
+            <ul class="footer-menu__list list-reset">
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Общая информация</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu footer-menu">
+            <h3 class="footer-menu__title">ТЕХНИКА</h3>
+            <ul class="footer-menu__list list-reset">
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Бульдозеры</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Трубоукладчики</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Колесная техника</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Коммунальная техника</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu footer-menu">
+            <h3 class="footer-menu__title">ЗАПЧАСТИ</h3>
+            <ul class="footer-menu__list list-reset">
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">3D каталог запчастей</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu footer-menu">
+            <h3 class="footer-menu__title">ПРЕСС-ЦЕНТР</h3>
+            <ul class="footer-menu__list list-reset">
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Новости</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Фотогалерея</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Видео</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu footer-menu">
+            <h3 class="footer-menu__title">КОНТАКТЫ</h3>
+            <ul class="footer-menu__list list-reset">
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Центральный офис</a></li>
+              <li class="footer-menu__item"><a href="#" class="footer-menu__link link-ui link-ui">Руководство</a></li>
+            </ul>
+          </div>
+        </div>
+        <div itemscope itemtype="https://schema.org/Organization">
+          <address class="footer__address address" itemscope itemtype="https://schema.org/PostalAddress" itemprop="address">
+            <span itemprop="addressCountry" class="address__country">Россия</span>,
+            <span itemprop="addressRegion" class="address__region">Чувашская Республика</span>
+            <span itemprop="addressLocality" class="address__locality">Чебоксары</span>
+            <a href="https://yandex.ru/maps" class="address__linkmap" target="_blank">Посмотреть на&#160;карте</a>
+          </address>
+        </div>
+        <div class="footer__contacts footer-contacts">
+          <a href="tel:+799999999999" class="footer-contacts__link footer-contacts__link--phone link-ui">9 999 999 99 99</a>
+          <div class="footer__social social-color">
+            <span class="social-color__title">Соцсети:</span>
+            <ul class="social-color__list list-reset">
+              <li class="social-color__item"><a href="https://www.youtube.com" target="_blank" class="social-color__link" aria-label="Наша страничка в Youtube">
+                <img class="social-color__icon" src="img/icon/youtube-color.svg" alt="icon youtube"  width="26" height="26" aria-hidden="true">
+              </a></li>
+              <li class="social-color__item"><a href="https://www.vk.com" target="_blank" class="social-color__link" aria-label="Наша страничка в ВКонтакте">
+                <img class="social-color__icon" src="img/icon/vk-color.svg" alt="icon vk"  width="26" height="26" aria-hidden="true">
+              </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom footer-bottom">
+        <div class="footer-bottom__container container">
+          <a href="#" class="footer-bottom__link link-ui" target="_blank">Уведомление об&#160;обработке персональных данных</a>
+          <a href="#" class="footer-bottom__link link-ui" target="_blank">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
