@@ -201,7 +201,7 @@
               <span class="login__name">Личный кабинет</span>
             </a>
             <div class="header-mobile__phonelist phonelist">
-              <button class="phonelist__btn btn-reset">
+              <button class="phonelist__btn btn-reset" aria-label="Открыть список телефонов" aria-expanded="false">
                 <svg class="phonelist__icon">
                   <use xlink:href="img/sprite.svg#call"></use>
                 </svg>
@@ -226,7 +226,7 @@
       <section class="banner" data-menu-overlay>
         <picture class="banner__bgimg">
           <source srcset="img/banner-bg768.webp" media="(max-width: 576px)" type="image/webp">
-          <source srcset="img/banner-bg768.jpg" media="(max-width: 576px)">
+          <source srcset="img/banner-bg768.jpg" media="(max-width: 576px)" type="image/jpg">
           <source srcset="img/banner-bg.webp 1x, img/banner-bg@2x.webp 2x" type="image/webp">
           <source srcset="img/banner-bg@2x.jpg 2x" type="image/jpg">
           <img src="img/banner-bg.jpg" height="220" alt="бульдозер в карьере" aria-hidden="true">
@@ -261,14 +261,14 @@
               <div class="swiper-slide">
                 <picture class="photoslider__img">
                   <source srcset="img/slider-img-1.webp 1x, img/slider-img-1@2x.jpg 2x" type="image/webp">
-                  <source srcset="img/slider-img-1@2x.jpg 2x" type="image/webp">
+                  <source srcset="img/slider-img-1@2x.jpg 2x"  type="image/jpg">
                   <img src="img/slider-img-1.jpg" width="1300" height="580" alt="Виды спецтехники">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture class="photoslider__img">
                   <source srcset="img/slider-img-2.webp 1x, img/slider-img-2@2x.jpg 2x" type="image/webp">
-                  <source srcset="img/slider-img-2@2x.jpg 2x" type="image/webp">
+                  <source srcset="img/slider-img-2@2x.jpg 2x"  type="image/jpg">
                   <img src="img/slider-img-2.jpg" width="1300" height="580" alt="Виды спецтехники">
                 </picture>
               </div>
@@ -520,7 +520,7 @@
 
       <div class="container">
         <div class="banner-leasing">
-          <p class="banner-leasing__content">Мы&#160;предлагаем разнообразные моделей спецтехники на&#160;условиях лизинга.<span class="banner-leasing__stronge">Воспользуйтесь программой субсидирования и&#160;получите скидку до&#160;40%!</span>
+          <p class="banner-leasing__content">Мы&#160;предлагаем разнообразные моделей спецтехники на&#160;условиях лизинга. <span class="banner-leasing__stronge">Воспользуйтесь программой субсидирования и&#160;получите скидку до&#160;40%!</span>
           </p>
           <a href="#bannerform" class="banner-leasing__btn btn">рассчитать лизинг</a>
         </div>
@@ -567,7 +567,7 @@
 
     <footer class="footer" itemscope itemtype="https://schema.org/Organization">
       <div class="footer__container container">
-        <span class="footer__company visially-hiddden" itemprop="name">Название компании</span>
+        <span class="footer__company visually-hidden" itemprop="name">Название компании</span>
         <div class="footer__nav">
           <div class="footer__menu footer-menu">
             <h3 class="footer-menu__title">О&#160;КОМПАНИИ</h3>
